@@ -10,8 +10,11 @@ int main()
 	scanf("%d", &m);
 	printf("Enter the second no.");
 	scanf("%d", &n);
-	int z= n;
-	printf("%d, %d", z, m);
+	int z=m;
+    m=n;
+	n=z;
+	
+	printf("%d, %d", m, n);
 	
 	
 	return 0;
@@ -28,7 +31,12 @@ int main()
 	scanf("%d", &m);
 	printf("Enter the second no.");
 	scanf("%d", &n);
-	printf("%d, %d", n,m);
+	m= m*n;
+	n= m/n;
+	m= m/n;
+   
+	printf("%d, %d", m,n);
+	
 	
 	return 0;
 }
