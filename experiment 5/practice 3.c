@@ -11,7 +11,7 @@ int main( ){
 		z= i%5;
 		k= i%3;
 	if(z==0 && k==0){
-	printf("\n %d is divisible by three and five.", i);} 
+	printf("%d is divisible by three and five.\n", i);} 
 	}return 0;
 	
 }
