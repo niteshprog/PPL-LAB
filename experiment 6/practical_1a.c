@@ -19,6 +19,32 @@ void armstrong(int armno)
 	
     
 } 
+void coprime(int armno)
+ {
+    int revnum = 0, dig = 0, hcf, n; 
+    int c = armno;
+    do
+    {
+        revnum *= 10;
+        dig = c % 10;
+        revnum += dig;
+        c /= 10;
+    } while (c > 0);
+    
+    printf("This number with reversed digits is: %d\n", revnum);
+    for( n=1 ; n<=armno; n++)
+    {
+        if(armno%n==0 && revnum%n==0){
+        	hcf=n;
+		}
+        }if(hcf==1)
+        {
+            printf("These are coprime.");
+        }else{
+            printf("These are not coprime.");
+        }
+    
+ }
 void main()
 {
 	printf("Let's check for the Armstrong number.\n");
