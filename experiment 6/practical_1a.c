@@ -45,6 +45,15 @@ void coprime(int armno)
         }
     
  }
+int factorial(int n){
+    int fac = 1, i;
+    
+    for (i = n ; i>0 ; --i)
+    {
+        fac *= i;
+    }
+    return fac;}
+
 void main()
 {
 	printf("Let's check for the Armstrong number.\n");
