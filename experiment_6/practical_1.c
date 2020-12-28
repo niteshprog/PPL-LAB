@@ -5,7 +5,7 @@
 int main()
 {
 	int n, sum=0,i=0;
-	printf("Enter the number:\n");
+	printf("Enter the number of elements in array:\n");
 	scanf("%d", &n);
 	int arr[n];
 	
